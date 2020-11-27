@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background:#202324;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color:#808384;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #ececec;
+}
+
+.underHeader {
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: #000000e6;
+}
+
+.underHeader ul {
+    text-align: right;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+}
+
+.underHeader ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px 0px 0px 10px;
+    padding-right: 10px;
+    border-right: 1px solid #3187b9;
+}
+
+.underHeader ul li a {
+    text-decoration: none;
+    font-size: 13pt;
+    color: #ffffff;
+}
+
+.underHeader .logo {
+    border-right: none;
+ }
+
+.welcome {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 23pt;
+}
+
+.underHeader li {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+}
+.underHeader li:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #3187b9;
+    height: 2px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.underHeader li:hover:before, .underHeader li:focus:before, .underHeader li:active:before {
+    right: 0;
+}
+
+.underHeader .enter {
+    border-right: 2px solid #1072bc;
+}
+
+.underHeader .enter {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+}
+.underHeader .enter:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #1072bc;
+    height: 2px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.underHeader .enter:hover:before, .underHeader .enter:focus:before, .underHeader .enter:active:before {
+    right: 0;
+}
+
+.underHeader .userName {
+    border-right: 2px solid #68a2d4;
+}
+
+.underHeader .userName {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+}
+.underHeader .userName:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #68a2d4;
+    height: 2px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.underHeader .userName:hover:before, .underHeader .userName:focus:before, .underHeader .userName:active:before {
+    right: 0;
+}
+
+.underHeader .logout {
+    border-right: 2px solid #ff6961;
+}
+
+.underHeader .logout {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+}
+.underHeader .logout:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #ff6961;
+    height: 2px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.underHeader .logout:hover:before, .underHeader .logout:focus:before, .underHeader .logout:active:before {
+    right: 0;
+}
+
+.footer {
+    clear: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6fb59c;
+    color: #ffffff;
+    height: 50px;
+    font-size: 13pt;
+}

@@ -1,0 +1,82 @@
+.form {
+    margin: 50px auto 25px auto;
+    width: 400px;
+    padding: 10px;
+    border-radius: 2.5px;
+}
+
+.form h2 {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 50px;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 20pt;
+    background-color: #3187b9;
+    border-bottom-right-radius: 3px;
+}
+
+.form .success {
+    margin-bottom: 25px;
+    padding: 5px 5px 5px 10px;
+    background-color: #1072bc;
+}
+
+.form .error {
+    margin-bottom: 25px;
+    padding: 5px 5px 5px 10px;
+    background-color: #ff6961;
+}
+
+.form .reset {
+    margin-bottom: 25px;
+    padding: 5px 5px 5px 10px;
+    color: #ff6961;
+}
+
+.formFooter {
+    margin: 10px;
+    padding: 5px 5px 5px 10px;
+    text-align: center;
+}
+
+.formFooter p {
+    padding: 7px;
+}
+
+.form a {
+    color:#1072bc;
+}
+
+form label {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+form input[type="text"], input[type="password"], input[type="date"], input[type="email"] {
+    height: 20px;
+    width: 100%;
+    margin: 25px 0px 25px 0px;
+    padding-left: 25px;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-radius: 3px;
+}
+
+form input[type="submit"] {
+    height: 40px;
+    width: 100%;
+    margin: 10px auto 0px auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 13pt;
+    font-weight: bold;
+    transition: .25s;
+    background-color: #dbdbdb;
+}
+
+form input[type="submit"]:hover {
+    background-color: #5b76b0;
+}

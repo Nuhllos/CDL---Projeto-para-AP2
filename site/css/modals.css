@@ -1,0 +1,87 @@
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 25%; opacity: 1}
+}
+
+.modalHeader {
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 10;
+    top: 25%;
+    width: 20%;
+    padding: 10px;
+    overflow: auto;
+    background-color:  #ececec;
+    border: 3px solid #65a58f;
+    border-radius: 3px;
+    animation-name: animatetop;
+    animation-duration: .7s
+}
+
+.modal input[type="text"], input[type="date"], input[type="number"] {
+    height: 15px;
+    width: 100%;
+    margin: 15px 0px 15px 0px;
+    padding-left: 25px;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-radius: 3px;
+}
+
+.modal .modalSelect {
+    height: 15px;
+    width: 100%;
+    margin: 15px 0px 15px 0px;
+    padding-left: 25px;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-radius: 3px;
+}
+
+.modal button[type="submit"] {
+    height: 25px;
+    width: 100%;
+    margin: 10px auto 0px auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 13pt;
+    font-weight: bold;
+    transition: .25s;
+    background-color: #dbdbdb;
+}
+
+.close, .close1, .close2 {
+    color: #313131;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+  
+.close:hover, .close1:hover, .close2:hover, .close:focus, .close1:focus, .close2:focus {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal button[type="submit"]:hover {
+    background-color: #5b76b0;
+}
+
+.modalFooter {
+    margin: 10px -10px -10px -10px;
+    height: 50px;
+    background-color: #313131;
+    color: white;
+}
